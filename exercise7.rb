@@ -11,3 +11,12 @@ students.each do |key, value|
   puts "#{key} is #{students[key]}"
 
 end
+
+
+# calculate total students using each and a variable to output result
+variable = 0
+students.each do |key, value|
+variable = (variable + value)
+end
+
+puts variable
