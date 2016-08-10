@@ -4,5 +4,7 @@ students = { :cohort1 => 34, :cohort2 => 42, :cohort3 => 22 }
 students[:cohort4]= 43
 
 students.each do |key, value|
-  puts "#{key.to_s} is #{value}"
+  students[key] = (value * 1.05)
+  puts "#{key} is #{students[key]}"
+
 end
